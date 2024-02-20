@@ -1,0 +1,11 @@
+<h1>Here Are All of Our Restaurants 🥄</h1>
+
+<!-- List all of our restaurants -->
+<!-- Restaurant.all -->
+<% @restaurants.each do |restaurant| %>
+  <div class="container">
+    <ul>
+      <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+    </ul>
+  </div>
+<% end %>
